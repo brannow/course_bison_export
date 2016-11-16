@@ -1,5 +1,5 @@
 <?php
-namespace CPSIT\CourseDeftisExport\Component\PreProcessor;
+namespace CPSIT\CourseBisonExport\Component\PreProcessor;
 
 /***************************************************************
  *  Copyright notice
@@ -26,13 +26,13 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Reflection\ObjectAccess;
 
 /**
- * Class PerformanceToDeftisArray
+ * Class PerformanceToBisonArray
  * Maps Performance objects to an array which can
- * be processed to valid Deftis XML
+ * be processed to valid Bison XML
  *
  * @package CPSIT\T3importExport\PreProcessor
  */
-class PerformanceToDeftisArray
+class PerformanceToBisonArray
     extends AbstractPreProcessor
     implements PreProcessorInterface
 {

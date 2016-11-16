@@ -1,5 +1,5 @@
 <?php
-namespace CPSIT\CourseDeftisExport\Tests\PreProcessor;
+namespace CPSIT\CourseBisonExport\Tests\PreProcessor;
 
 
 /***************************************************************
@@ -19,26 +19,26 @@ namespace CPSIT\CourseDeftisExport\Tests\PreProcessor;
  *  GNU General Public License for more details.
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
-use CPSIT\CourseQcatExport\Component\PreProcessor\PerformanceToQcatArray;
+use CPSIT\CourseBisonExport\Component\PreProcessor\PerformanceToBisonArray;
 use TYPO3\CMS\Core\Tests\AccessibleObjectInterface;
 use TYPO3\CMS\Core\Tests\UnitTestCase;
 
 /**
- * Class PerformanceToDeftisArrayTest
+ * Class PerformanceToBisonArrayTest
  *
- * @package CPSIT\CourseDeftisExport\Tests\Component\PreProcessor
+ * @package CPSIT\CourseBisonExport\Tests\Component\PreProcessor
  */
 class PerformanceToBisonArrayTest extends UnitTestCase
 {
 	/**
-	 * @var PerformanceToQcatArray|\PHPUnit_Framework_MockObject_MockObject|AccessibleObjectInterface
+	 * @var PerformanceToBisonArray|\PHPUnit_Framework_MockObject_MockObject|AccessibleObjectInterface
 	 */
 	protected $subject;
 
 	public function setUp()
 	{
 		$this->subject = $this->getAccessibleMock(
-			PerformanceToQcatArray::class,
+			PerformanceToBisonArray::class,
 			['dummy'], [], '', FALSE
 		);
 	}
